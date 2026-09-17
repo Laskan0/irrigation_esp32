@@ -8,3 +8,6 @@ data/prepared/
 models/
 
 *.zip
+
+artifacts/
+results/

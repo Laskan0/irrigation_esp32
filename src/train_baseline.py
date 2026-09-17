@@ -365,6 +365,22 @@ plt.title("Training and validation loss")
 plt.legend()
 
 plt.tight_layout()
+
+RESULTS_DIR = PROJECT_ROOT / "results" / "figures"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+plt.savefig(
+    RESULTS_DIR / "baseline_accuracy.png",
+    dpi=200,
+    bbox_inches="tight",
+)
+
+plt.savefig(
+    RESULTS_DIR / "baseline_loss.png",
+    dpi=200,
+    bbox_inches="tight",
+)
+
 plt.show()
 
 # ============================================================
